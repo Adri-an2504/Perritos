@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+header {
+    width: 90%;
+    max-width: 1200px;
+    padding: 2em 1.5em 2em 1.5em;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border-radius: 30px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 4.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+
+}
+
+p i {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #000000;
+    position: relative;
+    bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.d-inline-flex.align-items-center {
+    display: flex;
+    justify-self: center;
+}
+
+.fa.fa-envelope.mr-2{
+    color: #000000;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.text-body.px-3{
+    color: #000000;
+    padding: 0 1rem;
+}
+
+.fa.fa-phone-alt.mr-2{
+    color: #000000;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+
+}
+
+.col-lg-6.text-center.text-lg-right {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.d-inline-flex.align-items-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: rgb(90, 177, 240);
+    width: 99.9%;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.text-primary.px-3 {
+    color: #000000;
+    padding: 0 1rem;
+    position: relative;
+    bottom: 30px;
+}
+
+
+footer {
+    padding: 1.7rem;
+    background: rgb(90, 177, 240);
+    color: #000000;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 3rem;
+    text-align: center;
+    justify-content: center;
+    position: static;
+    margin-top: 0rem;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: static;
+    top: 18%;
+    right: inherit;
+}
+
+a {
+    color: #000000;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header, footer {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
